@@ -76,7 +76,7 @@ const StockDetails = ({ showSidebar }) => {
             setcandleData(temp2);
         }
 
-    }, [])
+    }, [intradayPrices, intradayPricesVal])
 
 
     // console.log(candleData);
