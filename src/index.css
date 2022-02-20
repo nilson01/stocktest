@@ -308,7 +308,7 @@ div h1.aboutUS-title{
 }
 
 div div.aboutUsImage, .aboutUsContent{
-  border: solid red 2px;
+  /* border: solid red 2px; */
   height: 400px;
   width: 400px;
   display: flex;

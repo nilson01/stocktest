@@ -5,6 +5,8 @@ import IconButton from '@material-ui/core/IconButton';
 import profile_url from '../media/profile.png';
 import { SidebarItem } from './SidebarItem';
 import '../css/Navbar.css';
+import * as IoIcons from 'react-icons/io';
+
 
 export default function Header({ sidebar, setSidebar }) {
     const showSidebar = () => setSidebar(!sidebar);
@@ -47,10 +49,18 @@ export default function Header({ sidebar, setSidebar }) {
                             </li>
                         );
                     })}
+
+                    {/* <li key={"a"} className={"nav-text"} >
+                        <Link exact to={`https://crispenchisina.shinyapps.io/stock_app_project/`}>
+                            {<IoIcons.IoMdBonfire />}
+                            <span>{'Portfolio'}</span>
+                        </Link>
+
+                    </li> */}
                 </ul>
             </div>
-            
-            <NavLink to="/" className="x"><img src={profile_url} alt="profile" align-self="center" width='150px' height='150px' border-radius='50%'/></NavLink>
-        </header>
+
+            <NavLink to="/" className="x"><img src={profile_url} alt="profile" align-self="center" width='150px' height='150px' border-radius='50%' /></NavLink>
+        </header >
     )
 }

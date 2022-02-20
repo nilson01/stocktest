@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {  useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import IconButton from '@material-ui/core/IconButton'; 
+import IconButton from '@material-ui/core/IconButton';
 import mainAnimation from '../media/stock_futuristic.mov';
 import upwardTrendAnimation from '../media/upwardTrend.mp4';
 import downwardTrendAnimation from '../media/downwardTrend.mp4';
@@ -21,8 +21,8 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(1),
         borderRadius: '20px',
     },
-
 }));
+
 
 const LandingPage = ({ showSidebar }) => {
     const classes = useStyles();
@@ -46,15 +46,15 @@ const LandingPage = ({ showSidebar }) => {
                 <h1 className='texthead'>Invest, Grow, Build</h1>
                 <h3 className="buyHighSellLow">Buy High, Sell Low!</h3>
                 <video id="downwardTrend" autoPlay loop muted>
-                    <source src={downwardTrendAnimation} type="video/mp4"/>
+                    <source src={downwardTrendAnimation} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <video id="main-video" autoPlay loop muted>
-                    <source src={mainAnimation} type="video/mp4"/>
+                    <source src={mainAnimation} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <video id="upwardTrend" autoPlay loop muted>
-                    <source src={upwardTrendAnimation} type="video/mp4"/>
+                    <source src={upwardTrendAnimation} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>

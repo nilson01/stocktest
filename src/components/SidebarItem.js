@@ -10,8 +10,8 @@ export const SidebarItem = [
     cName: 'nav-text'
   },
   {
-    title: 'Hot Market',
-    path: '/hotMarket',
+    title: 'Portfolio',
+    path: 'https://crispenchisina.shinyapps.io/stock_app_project/',
     icon: <IoIcons.IoMdBonfire />,
     cName: 'nav-text'
   },
