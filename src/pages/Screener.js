@@ -32,13 +32,11 @@ const Screener = ({ showSidebar }) => {
     // var url = "https://cloud.iexapis.com/stable/stock/twtr/quote?token=sk_9469d565ae4c4fc491b16ca8767d8a1e";
 
     const { data: tempdata, error, isPending } = useFetch(url);
-    // console.log(data);
 
     let data = [];
 
     tempdata && data.push(tempdata);
 
-    // console.log(tempdata);
 
     const handleSubmit = (e) => {
         e.preventDefault();

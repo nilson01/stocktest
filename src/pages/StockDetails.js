@@ -79,19 +79,11 @@ const StockDetails = ({ showSidebar }) => {
     }, [intradayPrices, intradayPricesVal])
 
 
-    // console.log(candleData);
-
-    // console.log('This is I am checking', intradayPricesVal)
-
-    // for (let i; i < intradayPricesVal.length; i++) {
-    //     console.log(intradayPricesVal[i]);
-    // }
 
     const analysts = [];
     tempAnalysts && analysts.push(tempAnalysts[0]);
 
-    // var analysts = tempAnalysts[0];
-    // console.log('tempProfile:' + tempProfile);
+
 
     let profile = [];
     tempProfile && profile.push(tempProfile);
@@ -148,15 +140,7 @@ const StockDetails = ({ showSidebar }) => {
         );
     };
 
-    // const renderNewsSentiment = (stock, index) => {
-    //     return (
-    //         <tr key={index}>
-    //             <td>{stock.articlesInLastWeek}</td>
-    //             <td>{stock.sectorAverageBullishPercent}</td>
-    //             <td>{stock.bullishPercent}</td>
-    //         </tr>
-    //     );
-    // }
+
 
     const renderNews = (stock, index) => {
         return (

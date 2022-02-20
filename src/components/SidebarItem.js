@@ -10,13 +10,6 @@ export const SidebarItem = [
     cName: 'nav-text'
   },
   {
-    title: 'Portfolio',
-    path: 'https://crispenchisina.shinyapps.io/stock_app_project/',
-    icon: <IoIcons.IoMdBonfire />,
-    cName: 'nav-text'
-  },
-
-  {
     title: 'Most Active',
     path: '/topGainersLosers',
     icon: <IoIcons.IoMdPeople />,

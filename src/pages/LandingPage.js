@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -60,32 +60,23 @@ const LandingPage = ({ showSidebar }) => {
             </div>
 
             <div className="linegraph">
+
+
+
                 <Card className={classes.root}>
                     <CardActionArea>
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                <Button variant="outlined" color="primary">
-                                    DJIA
+
+                            <a href="https://www.google.com/finance/quote/.IXIC:INDEXNASDAQ">
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    <Button variant="outlined" color="primary">
+                                        NASDAQ
                                 </Button>
-                            </Typography>
+                                </Typography>
 
-                            <Typography variant="body2" color="textSecondary" component="p">
-                                The Dow Jones Industrial Average, Dow Jones, or simply the Dow,
-                                is a price-weighted measurement stock market index of the 30 prominent companies listed on stock exchanges in the United States.
+                            </a>
 
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
 
-                </Card>
-                <Card className={classes.root}>
-                    <CardActionArea>
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                <Button variant="outlined" color="primary">
-                                    NASDAQ
-                                </Button>
-                            </Typography>
 
                             <Typography variant="body2" color="textSecondary" component="p">
 
@@ -99,11 +90,13 @@ const LandingPage = ({ showSidebar }) => {
                 <Card className={classes.root}>
                     <CardActionArea>
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                <Button variant="outlined" color="primary">
-                                    S&#38;P 500
+                            <a href='https://www.google.com/finance/quote/.INX:INDEXSP'>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    <Button variant="outlined" color="primary">
+                                        S&#38;P 500
                                 </Button>
-                            </Typography>
+                                </Typography>
+                            </a>
 
                             <Typography variant="header" color="header" component="p">
                                 The Standard and Poor's 500, or simply the S&#38;P 500, is a stock market index tracking the stock performance of 500 of the
