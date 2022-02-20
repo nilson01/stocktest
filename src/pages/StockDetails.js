@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ReactApexChart from "react-apexcharts"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { withStyles, makeStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import useFetch from '../useFetch';
 import * as ReactBootStrap from "react-bootstrap";
@@ -20,7 +20,7 @@ const BootstrapButton = withStyles({
 })(Button);
 
 const StockDetails = ({ showSidebar }) => {
-    const [name, setName] = useState('twtr');
+    const [name] = useState('twtr');
     const [keyStatsButton, setKeyStatsButton] = useState(false);
     const [analystsButton, setAnalystsButton] = useState(false);
     const [newsButton, setNewsButton] = useState(false);
@@ -46,18 +46,18 @@ const StockDetails = ({ showSidebar }) => {
     ]);
 
     const keyStatsUrl = "https://cloud.iexapis.com/stable/time-series/REPORTED_FINANCIALS/" + name + "?token=sk_9b43110c530b43f3929296619e077129";
-    const newsSentimentUrl = "https://finnhub.io/api/v1/news-sentiment?symbol=" + name + "&token=c3e7in2ad3ief4elcsn0";
+    // const newsSentimentUrl = "https://finnhub.io/api/v1/news-sentiment?symbol=" + name + "&token=c3e7in2ad3ief4elcsn0";
     const newsUrl = "https://cloud.iexapis.com/stable/stock/" + name + "/news?token=sk_9b43110c530b43f3929296619e077129";
     const profileUrl = "https://cloud.iexapis.com/stable/stock/" + name + "/company?token=sk_9b43110c530b43f3929296619e077129";
     const analystsUrl = "https://finnhub.io/api/v1/stock/recommendation?symbol=" + name + "&token=c3e7in2ad3ief4elcsn0";
     const intradayPricesUrl = "https://cloud.iexapis.com/stable/stock/" + name + "/intraday-prices?token=sk_9b43110c530b43f3929296619e077129"
 
     const { data: keyStats, error: errKeyStats, isPending: isPendingKeyStats } = useFetch(keyStatsUrl);
-    const { data: newsSentiment, error: errNewsSentiment, isPending: isPendingNewsSentiment } = useFetch(newsSentimentUrl);
+    // const { data: newsSentiment, error: errNewsSentiment, isPending: isPendingNewsSentiment } = useFetch(newsSentimentUrl);
     const { data: news, error: errNews, isPending: isPendingNews } = useFetch(newsUrl);
     const { data: tempProfile, error: errProfile, isPending: isPendingProfile } = useFetch(profileUrl);
     const { data: tempAnalysts, error: errAnalysts, isPending: isPendingAnalysts } = useFetch(analystsUrl);
-    const { data: intradayPrices, error: errIntradayPrices, isPending: isPendingIntradayPrices } = useFetch(intradayPricesUrl);
+    const { data: intradayPrices } = useFetch(intradayPricesUrl);
 
     // console.log((intradayPrices != null) && intradayPrices[1]);
     useEffect(() => {
@@ -148,15 +148,15 @@ const StockDetails = ({ showSidebar }) => {
         );
     };
 
-    const renderNewsSentiment = (stock, index) => {
-        return (
-            <tr key={index}>
-                <td>{stock.articlesInLastWeek}</td>
-                <td>{stock.sectorAverageBullishPercent}</td>
-                <td>{stock.bullishPercent}</td>
-            </tr>
-        );
-    }
+    // const renderNewsSentiment = (stock, index) => {
+    //     return (
+    //         <tr key={index}>
+    //             <td>{stock.articlesInLastWeek}</td>
+    //             <td>{stock.sectorAverageBullishPercent}</td>
+    //             <td>{stock.bullishPercent}</td>
+    //         </tr>
+    //     );
+    // }
 
     const renderNews = (stock, index) => {
         return (

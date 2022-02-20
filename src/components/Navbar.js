@@ -1,15 +1,15 @@
 import React from 'react'
 import { NavLink, Link } from "react-router-dom";
-import DehazeIcon from '@material-ui/icons/Dehaze';
-import IconButton from '@material-ui/core/IconButton';
+// import DehazeIcon from '@material-ui/icons/Dehaze';
+// import IconButton from '@material-ui/core/IconButton';
 import profile_url from '../media/profile.png';
 import { SidebarItem } from './SidebarItem';
 import '../css/Navbar.css';
-import * as IoIcons from 'react-icons/io';
+// import * as IoIcons from 'react-icons/io';
 
 
 export default function Header({ sidebar, setSidebar }) {
-    const showSidebar = () => setSidebar(!sidebar);
+    // const showSidebar = () => setSidebar(!sidebar);
 
     return (
         <header className='header'>
