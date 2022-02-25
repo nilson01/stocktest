@@ -61,31 +61,29 @@ const LandingPage = ({ showSidebar }) => {
 
             <div className="linegraph">
 
-                <div className="linegraph">
-                    <Card className={classes.root}>
-                        <CardActionArea>
-                            <CardContent>
+                <Card className={classes.root}>
+                    <CardActionArea>
+                        <CardContent>
 
-                                <a href="https://www.google.com/finance/quote/.IXIC:INDEXNASDAQ" style={{ textDecoration: 'none' }} >
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        <Button variant="outlined" color="primary">
-                                            DJIA
+                            <a href="https://www.google.com/finance/quote/.IXIC:INDEXNASDAQ" style={{ textDecoration: 'none' }} >
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    <Button variant="outlined" color="primary">
+                                        DJIA
                                 </Button>
-                                    </Typography>
+                                </Typography>
 
-                                </a>
+                            </a>
 
-                                <Typography variant="body2" color="textSecondary" component="p">
-                                    The Dow Jones Industrial Average, Dow Jones, or simply the Dow,
-                                    is a price-weighted measurement stock market index of the 30 prominent companies listed on stock exchanges in the United States.
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                The Dow Jones Industrial Average, Dow Jones, or simply the Dow,
+                                is a price-weighted measurement stock market index of the 30 prominent companies listed on stock exchanges in the United States.
 
                             </Typography>
-                            </CardContent>
-                        </CardActionArea>
+                        </CardContent>
+                    </CardActionArea>
 
-                    </Card>
+                </Card>
 
-                </div>
 
                 <Card className={classes.root}>
                     <CardActionArea>

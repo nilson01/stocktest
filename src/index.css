@@ -294,6 +294,7 @@ div h1.intro-title {
 div p.intro-subtitle {
   font-size: 1.5rem;
   font-weight: 300;
+
 }
 
 div h1.aboutUS-title{
@@ -308,12 +309,19 @@ div h1.aboutUS-title{
 }
 
 div div.aboutUsImage, .aboutUsContent{
-  /* border: solid red 2px; */
   height: 400px;
   width: 400px;
-  display: flex;
-  float: left;
-  margin: auto;
+  /* float: left; */
+  /* margin: auto; */
+
+}
+
+.contentNilson{
+  /* border: solid red 2px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+ 
 }
 
 div div.aboutUsImage{
@@ -327,5 +335,5 @@ div div.aboutUsContent{
 div.aboutUs-contents{
   margin: 20px auto;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }

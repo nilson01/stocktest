@@ -9,6 +9,8 @@ export default function AboutUs({ showSidebar }) {
     return (
         <div className="about-us container" onClick={showSidebar}>
             <h1 className="aboutUS-title"> ABOUT US </h1>
+
+
             <div className="aboutUs-contents">
                 <div className="imageAbhishek aboutUsImage">
                     <img src={profile_urla} alt="profile" width='100%' height='100%' style={{ borderRadius: '400px' }} />
@@ -22,70 +24,65 @@ export default function AboutUs({ showSidebar }) {
             </div>
             <div className="aboutUs-contents">
 
-                <div className="contentNilson aboutUsContent">
-                    <h3 className="intro-title mb-4">Abhishek Kafle</h3>
-                    <p className="intro-subtitle">
-                        <span className="text-slider-items"></span>
-                        <strong className="text-slider">
-                            <Typed
-                                strings={[
-                                    "Mechanical Engineer",
-                                    "Applied Maths and Statistician",
-                                    "Front End Developer"
-                                    
-                                ]}
-                                typeSpeed={80}
-                                backDelay={1100}
-                                backSpeed={30}
-                                loop
-                            />
-                        </strong>
-                    </p>
-                </div>
+                <div className=" aboutUsContent" style={{}}>
+                    <h3 className="" style={{ display: 'flex', justifyContent: 'center' }}>Abhishek Kafle</h3>
+                    <strong style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Typed
+                            strings={[
+                                "Applied Mathematics and Statistics",
+                                "Mechanical Engineer",
 
-                <div className="contentNilson aboutUsContent">
-                    <h3 className="intro-title mb-4">Crispen Chisina</h3>
-                    <p className="intro-subtitle">
-                        <span className="text-slider-items"></span>
-                        <strong className="text-slider">
-                            <Typed
-                                strings={[
-                                    "Applied Maths and Statistician",
-                                    "Front End Developer",
-                                    "Back End Developer",
-                                    "Data Science Enthusiast"
-                                ]}
-                                typeSpeed={80}
-                                backDelay={1100}
-                                backSpeed={30}
-                                loop
-                            />
-                        </strong>
-                    </p>
-                </div>
+                            ]}
+                            typeSpeed={80}
+                            backDelay={1100}
+                            backSpeed={30}
+                            loop
+                        />
+                    </strong>
 
-                <div className="contentNilson aboutUsContent">
-                    <h3 className="intro-title mb-4">Nilson Chapagain</h3>
-                    <p className="intro-subtitle">
-                        <span className="text-slider-items"></span>
-                        <strong className="text-slider">
-                            <Typed
-                                strings={[
-                                    "Applied Maths and Statistician",
-                                    "Computer Science Minor",
-                                    "Front End Developer",
-                                    "Back End Developer",
-                                    "Machine Learning Enthusiast"
-                                ]}
-                                typeSpeed={80}
-                                backDelay={1100}
-                                backSpeed={30}
-                                loop
-                            />
-                        </strong>
-                    </p>
+                </div>
+                <div className=" aboutUsContent" style={{}}>
+
+
+                    <h3 className="" style={{ display: 'flex', justifyContent: 'center' }}>Crispen Chisina</h3>
+
+                    <strong style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Typed
+                            strings={[
+                                "Applied Mathematics and Statistics",
+                                "Data Science Enthusiast"
+
+                            ]}
+                            typeSpeed={80}
+                            backDelay={1100}
+                            backSpeed={30}
+                            loop
+                        />
+                    </strong>
+
+                </div>
+                <div className=" aboutUsContent" style={{}}>
+
+
+                    <h3 className="" style={{ display: 'flex', justifyContent: 'center' }}>Nilson Chapagain</h3>
+
+                    <strong style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Typed
+                            strings={[
+                                "Applied Mathematics and Statistics",
+                                "Machine Learning Enthusiast"
+
+                            ]}
+                            typeSpeed={80}
+                            backDelay={1100}
+                            backSpeed={30}
+                            loop
+                        />
+                    </strong>
+
                 </div>
             </div>
+
         </div>
     )
 }
